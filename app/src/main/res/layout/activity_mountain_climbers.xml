@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    tools:context=".mountainClimbers">
+
+
+    <ImageView
+        android:id="@+id/bgcircle1climbers"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="240dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/chronometer12lunges"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bgcircle" />
+
+
+    <ImageView
+        android:id="@+id/icanhor1climbers"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="280dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/chronometer12lunges"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icanchor" />
+
+    <Chronometer
+        android:id="@+id/chronometer12climbers"
+        android:layout_width="154dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonstartwatch1climbers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonstartwatch1climbers"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/custom_button"
+        android:text="Start set!"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/finishWorkout1climbers"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/greenbutton"
+        android:text="Next Set!"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonstartwatch1climbers" />
+
+    <TextView
+        android:id="@+id/textView7climbers"
+        android:layout_width="234dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Mt. Climbers!"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17climbers"
+        android:layout_width="208dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="75dp"
+        android:text="Mountain climbers are great total body exercise. You are going to be utilizing your core because you are starting from a plank position. Your shoulders have to stabilize your upper body. Your triceps have to work isometrically to keep you in place. And then you are gonna be moving your legs, so you are getting some work in the hip joint."
+        android:textColor="#FFFFFF"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13climbers"
+        android:layout_width="150dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7climbers"
+        app:srcCompat="@drawable/mountainclimbers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

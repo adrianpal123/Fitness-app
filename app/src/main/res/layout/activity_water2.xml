@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WaterActivity2">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonNight"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/mainpagebuttons"
+        android:text="Including NightTime!"
+        android:textAllCaps="false"
+        android:textColor="#7a2630"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonDay"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/mainpagebuttons"
+        android:text="Only Day!"
+        android:textAllCaps="false"
+        android:textColor="#7a2630"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="366dp"
+        android:layout_height="298dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clock" />
+
+    <TextView
+        android:id="@+id/alarmInfo"
+        android:layout_width="403dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="70dp"
+        android:text="Set your basic alarm reminder! "
+        android:textAllCaps="false"
+        android:textColor="#7a2630"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/alarmOutput"
+        android:layout_width="340dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarmInfo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonHomepageAlarm2"
+        android:layout_width="108dp"
+        android:layout_height="44dp"
+        android:text="Home Page"
+        android:textAllCaps="false"
+        android:background="@drawable/greenbutton"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

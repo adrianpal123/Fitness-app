@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitnessapppaladrian">
+
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FitnessAppPalAdrian">
+        <activity android:name=".pushup"></activity>
+        <activity android:name=".mountainClimbers" />
+        <activity android:name=".lunges" />
+        <activity android:name=".legraises" />
+        <activity android:name=".WaterActivity2" />
+        <activity android:name=".WaterActivityFirst" />
+        <activity android:name=".stopWatchActivity2" />
+        <activity android:name=".workoutActivity2" />
+        <activity android:name=".workoutActivity" />
+        <activity android:name=".stopWatch" />
+        <activity android:name=".waterActivity" />
+        <activity android:name=".stepCalculatorConvertorActivityPage" />
+        <activity android:name=".stepCalculatorActivitypage" />
+        <activity android:name=".BmiActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlarmNotificationReciever" />
+        <receiver android:name=".AlarmToastReciver" />
+    </application>
+
+</manifest>
